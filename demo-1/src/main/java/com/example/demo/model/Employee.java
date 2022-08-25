@@ -31,9 +31,6 @@ public class Employee {
 	@Column(name="email")
 	private String email;
 	
-	@Column(name="salary")
-	private int salary;
-	
 	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinColumn(name="ea_id")
 	private EmployeeAddress employeeAddress;
