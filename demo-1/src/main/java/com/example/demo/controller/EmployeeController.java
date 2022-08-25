@@ -29,7 +29,7 @@ public class EmployeeController {
 		return new ResponseEntity<Employee>(employeeService.saveEmployee(employee), HttpStatus.CREATED);
 	}
 	
-	@RequestMapping(value = "/listAll", method = RequestMethod.GET)
+	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public ResponseEntity<List<Employee>> getList() {
 		return new ResponseEntity<List<Employee>>(employeeService.getEmployees(), HttpStatus.OK);
 	}
